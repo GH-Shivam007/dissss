@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shivam Jha</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --bg: #0b0b10;
+        --text: #f2f2f5;
+        --muted: #9a9aa6;
+        --accent: #7cffcb;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Inter, system-ui, sans-serif;
+      }
+
+      html,
+      body {
+        height: 100%;
+        background: var(--bg);
+        color: var(--text);
+      }
+
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 40px;
+      }
+
+      /* subtle grain */
+      body::after {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+        opacity: 0.04;
+        pointer-events: none;
+      }
+
+      /* container */
+      .container {
+        max-width: 900px;
+      }
+
+      /* name */
+      h1 {
+        font-size: clamp(2.8rem, 6vw, 4.5rem);
+        font-weight: 700;
+        letter-spacing: -0.02em;
+      }
+
+      /* divider */
+      .divider {
+        width: 80px;
+        height: 2px;
+        background: var(--accent);
+        margin: 28px auto;
+        opacity: 0.8;
+      }
+
+      /* main thought */
+      .main-text {
+        font-size: 1.2rem;
+        line-height: 1.9;
+        color: var(--muted);
+      }
+
+      /* strong lines */
+      .main-text strong {
+        color: var(--text);
+        font-weight: 600;
+      }
+
+      /* philosophy-tech block */
+      .blocks {
+        margin-top: 48px;
+        font-size: 1.05rem;
+        line-height: 1.8;
+        color: var(--muted);
+      }
+
+      /* coming soon */
+      .coming {
+        margin-top: 56px;
+        font-size: 0.85rem;
+        letter-spacing: 4px;
+        color: var(--accent);
+        opacity: 0.7;
+        animation: fade 2.5s ease-in-out infinite;
+      }
+
+      @keyframes fade {
+        0%,
+        100% {
+          opacity: 0.4;
+        }
+        50% {
+          opacity: 0.9;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Shivam Jha</h1>
+
+      <div class="divider"></div>
+
+      <p class="main-text">
+        I write at the intersection of <strong>technology</strong> and
+        <strong>philosophy</strong>. <br /><br />
+        Not to predict the future — but to question the systems we are already
+        living inside.
+      </p>
+
+      <div class="blocks">
+        <p>
+          Code is not neutral.<br />
+          Interfaces are arguments.<br />
+          Security is a statement about trust.<br />
+          UX is applied ethics at scale.
+        </p>
+
+        <br />
+
+        <p>
+          From programming and cybersecurity<br />
+          to design, behavior, and first-principle thinking — this space
+          explores how tools quietly shape humans, long before humans realize
+          it.
+        </p>
+      </div>
+
+      <div class="coming">COMING SOON</div>
+    </div>
+  </body>
+</html>
