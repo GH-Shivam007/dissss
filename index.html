@@ -1,151 +1,793 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shivam Jha</title>
+diff --git a/README.md b/README.md
+index 83bb8c29edb3bd15db030286d112a7341e7345b2..c54a4085bf50aa0a0dc911c52c9c452a70c2ccf3 100644
+GIT binary patch
+literal 657
+zcmY*XOK#gR5Z&_>5AenYVkIq*MZN2$NCLDj(i-hjv@{l(P$Wx^<fsSe0eZxqq(j*?
+z(hUV@-thgn!0!7aK8M7I;B3H0otaW}+T-4{ekOdgKXq!AdJkti!$&G7tQVMW*p7rl
+zNIf{93C>Z&@|B_I@*h(e65g$&PCPTk3sZk#s+3wR@WDDl<}@@sBvNbC*0=Oh8SY(;
+zKfit>>h2W++PB!<&urRyO1bQ0o*d<>$@#Q1+B|57ma^^qyyCQIVx&QEWkbhUJ)P07
+zUAfTN21|(}<}2udL)If*Ato9v9r5sG`)M^RzYE7=|KGrcMmsl&rv<i=ZSZ)5<&VKO
+z&j^wHN^Rx*-(G8zB<Ci{^%U7Yg=3~PM{~L6EtUcceNU21i<t<58Y!*R<KPiIAsoPl
+zvec4-)M7}4g{RVsG~80!C{@?>UT34?#75Mudl=?eoo>SI?afVrDD~Bd&LVkJf-0EJ
+z_4UkZLgq~Y3Tl_F@1V~@U^Di_@;c`J6KQ8NOOj_tGBkR$@-#|+hoO`WdWqU+NvcwR
+E0W$9A3IG5A
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
+literal 22
+XcmezWPnki1A%!86p%@Bz8Mqh#Ohg3n
 
-    <style>
-      :root {
-        --bg: #0b0b10;
-        --text: #f2f2f5;
-        --muted: #9a9aa6;
-        --accent: #7cffcb;
-      }
-
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: Inter, system-ui, sans-serif;
-      }
-
-      html,
-      body {
-        height: 100%;
-        background: var(--bg);
-        color: var(--text);
-      }
-
-      body {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 40px;
-      }
-
-      /* subtle grain */
-      body::after {
-        content: "";
-        position: fixed;
-        inset: 0;
-        background-image: url("https://grainy-gradients.vercel.app/noise.svg");
-        opacity: 0.04;
-        pointer-events: none;
-      }
-
-      /* container */
-      .container {
-        max-width: 900px;
-      }
-
-      /* name */
-      h1 {
-        font-size: clamp(2.8rem, 6vw, 4.5rem);
-        font-weight: 700;
-        letter-spacing: -0.02em;
-      }
-
-      /* divider */
-      .divider {
-        width: 80px;
-        height: 2px;
-        background: var(--accent);
-        margin: 28px auto;
-        opacity: 0.8;
-      }
-
-      /* main thought */
-      .main-text {
-        font-size: 1.2rem;
-        line-height: 1.9;
-        color: var(--muted);
-      }
-
-      /* strong lines */
-      .main-text strong {
-        color: var(--text);
-        font-weight: 600;
-      }
-
-      /* philosophy-tech block */
-      .blocks {
-        margin-top: 48px;
-        font-size: 1.05rem;
-        line-height: 1.8;
-        color: var(--muted);
-      }
-
-      /* coming soon */
-      .coming {
-        margin-top: 56px;
-        font-size: 0.85rem;
-        letter-spacing: 4px;
-        color: var(--accent);
-        opacity: 0.7;
-        animation: fade 2.5s ease-in-out infinite;
-      }
-
-      @keyframes fade {
-        0%,
-        100% {
-          opacity: 0.4;
-        }
-        50% {
-          opacity: 0.9;
-        }
-      }
-    </style>
-  </head>
-
-  <body>
-    <div class="container">
-      <h1>Shivam Jha</h1>
-
-      <div class="divider"></div>
-
-      <p class="main-text">
-        I write at the intersection of <strong>technology</strong> and
-        <strong>philosophy</strong>. <br /><br />
-        Not to predict the future — but to question the systems we are already
-        living inside.
-      </p>
-
-      <div class="blocks">
-        <p>
-          Code is not neutral.<br />
-          Interfaces are arguments.<br />
-          Security is a statement about trust.<br />
-          UX is applied ethics at scale.
-        </p>
-
-        <br />
-
-        <p>
-          From programming and cybersecurity<br />
-          to design, behavior, and first-principle thinking — this space
-          explores how tools quietly shape humans, long before humans realize
-          it.
-        </p>
-      </div>
-
-      <div class="coming">COMING SOON</div>
-    </div>
-  </body>
-</html>
+diff --git a/app.js b/app.js
+new file mode 100644
+index 0000000000000000000000000000000000000000..6313b0ef975319151ad108a8e4ec50825e799605
+--- /dev/null
++++ b/app.js
+@@ -0,0 +1,334 @@
++const steps = [
++  {
++    id: "overview",
++    tag: "Part 1",
++    title: "App Overview & Objectives",
++    description:
++      "Define the outcome, quality bar, and what success should feel like for a hiring manager.",
++    questions: [
++      {
++        id: "goal",
++        label: "What is the single most important goal for this portfolio?",
++        type: "textarea",
++      },
++      {
++        id: "vibe",
++        label: "How should the visual vibe be described in one sentence?",
++        type: "textarea",
++      },
++      {
++        id: "proof",
++        label: "What proof points should instantly convince recruiters?",
++        type: "textarea",
++      },
++    ],
++  },
++  {
++    id: "audience",
++    tag: "Part 2",
++    title: "Target Audience",
++    description: "Clarify who this experience is optimized for and who is secondary.",
++    questions: [
++      {
++        id: "primaryAudience",
++        label: "Primary audience (roles + industries):",
++        type: "textarea",
++      },
++      {
++        id: "secondaryAudience",
++        label: "Secondary audience (roles + motivations):",
++        type: "textarea",
++      },
++      {
++        id: "audienceIntent",
++        label: "What should each audience do after viewing the site?",
++        type: "textarea",
++      },
++    ],
++  },
++  {
++    id: "features",
++    tag: "Part 3",
++    title: "Core Features & Functionality",
++    description: "Capture the exact experiences that need to be built.",
++    questions: [
++      {
++        id: "scrollArchitecture",
++        label: "How should hybrid vertical + horizontal scrolling behave?",
++        type: "textarea",
++      },
++      {
++        id: "heroCaseStudy",
++        label: "Hero case study storyline (problem → finding → impact):",
++        type: "textarea",
++      },
++      {
++        id: "technicalLab",
++        label: "Technical Lab modules to include (React, Django, Blockchain, etc.):",
++        type: "textarea",
++      },
++    ],
++  },
++  {
++    id: "stack",
++    tag: "Part 4",
++    title: "High-Level Technical Stack",
++    description: "Choose the implementation stack and any non-negotiable tools.",
++    questions: [
++      {
++        id: "frontendStack",
++        label: "Frontend framework choices and reasons:",
++        type: "textarea",
++      },
++      {
++        id: "animationStack",
++        label: "Animation strategy (Framer Motion / GSAP / Lenis):",
++        type: "textarea",
++      },
++      {
++        id: "cmsDeploy",
++        label: "CMS + deployment setup details:",
++        type: "textarea",
++      },
++    ],
++  },
++  {
++    id: "dataModel",
++    tag: "Part 5",
++    title: "Conceptual Data Model",
++    description: "Define the content schema fields your CMS and UI must support.",
++    questions: [
++      {
++        id: "caseStudyFields",
++        label: "CaseStudy object fields (required vs optional):",
++        type: "textarea",
++      },
++      {
++        id: "skillFields",
++        label: "Skill component fields and format:",
++        type: "textarea",
++      },
++    ],
++  },
++  {
++    id: "uiPrinciples",
++    tag: "Part 6",
++    title: "UI Design Principles",
++    description: "Set the design language and motion rules for consistency.",
++    questions: [
++      {
++        id: "motionUx",
++        label: "Motion UX rules (timing, easing, transition tone):",
++        type: "textarea",
++      },
++      {
++        id: "palette",
++        label: "Color and visual system constraints:",
++        type: "textarea",
++      },
++      {
++        id: "dataStory",
++        label: "How should data scrollytelling visuals animate?",
++        type: "textarea",
++      },
++    ],
++  },
++  {
++    id: "security",
++    tag: "Part 7",
++    title: "Security & Performance",
++    description: "Define safeguards for speed, privacy, and sensitive project access.",
++    questions: [
++      {
++        id: "assetOptimization",
++        label: "Asset optimization constraints:",
++        type: "textarea",
++      },
++      {
++        id: "privacyRoute",
++        label: "How should the protected route work for sensitive content?",
++        type: "textarea",
++      },
++    ],
++  },
++  {
++    id: "phases",
++    tag: "Part 8",
++    title: "Development Phases",
++    description: "Turn your roadmap into delivery milestones.",
++    questions: [
++      {
++        id: "phase1",
++        label: "Phase 1 deliverables:",
++        type: "textarea",
++      },
++      {
++        id: "phase2",
++        label: "Phase 2 deliverables:",
++        type: "textarea",
++      },
++      {
++        id: "phase3",
++        label: "Phase 3 deliverables:",
++        type: "textarea",
++      },
++      {
++        id: "phase4",
++        label: "Phase 4 deliverables:",
++        type: "textarea",
++      },
++    ],
++  },
++  {
++    id: "risks",
++    tag: "Part 9",
++    title: "Potential Challenges & Solutions",
++    description: "Document known UX risks and mitigation strategies.",
++    questions: [
++      {
++        id: "challenge",
++        label: "Main risk to user experience:",
++        type: "textarea",
++      },
++      {
++        id: "solution",
++        label: "Mitigation strategy and fallback controls:",
++        type: "textarea",
++      },
++    ],
++  },
++];
++
++const storageKey = "uxr-masterplan-content";
++const state = JSON.parse(localStorage.getItem(storageKey) || "{}");
++let currentStepIndex = 0;
++
++const stepList = document.getElementById("stepList");
++const stepTag = document.getElementById("stepTag");
++const stepTitle = document.getElementById("stepTitle");
++const stepDescription = document.getElementById("stepDescription");
++const stepForm = document.getElementById("stepForm");
++const summaryPreview = document.getElementById("summaryPreview");
++const prevBtn = document.getElementById("prevBtn");
++const nextBtn = document.getElementById("nextBtn");
++const resetBtn = document.getElementById("resetBtn");
++const copyBtn = document.getElementById("copyBtn");
++
++function getStepValues(stepId) {
++  if (!state[stepId]) state[stepId] = {};
++  return state[stepId];
++}
++
++function isStepComplete(step) {
++  const values = getStepValues(step.id);
++  return step.questions.every((q) => (values[q.id] || "").trim().length > 0);
++}
++
++function saveState() {
++  localStorage.setItem(storageKey, JSON.stringify(state));
++}
++
++function renderStepList() {
++  stepList.innerHTML = "";
++  steps.forEach((step, index) => {
++    const li = document.createElement("li");
++    const btn = document.createElement("button");
++    btn.type = "button";
++    btn.className = "step-button";
++    if (index === currentStepIndex) btn.classList.add("active");
++    if (isStepComplete(step)) btn.classList.add("done");
++    btn.innerHTML = `${step.tag} · ${step.title}<small>${step.questions.length} prompts</small>`;
++    btn.onclick = () => {
++      collectInputs();
++      currentStepIndex = index;
++      render();
++    };
++    li.appendChild(btn);
++    stepList.appendChild(li);
++  });
++}
++
++function renderForm(step) {
++  const values = getStepValues(step.id);
++  stepForm.innerHTML = "";
++
++  step.questions.forEach((q) => {
++    const field = document.createElement("label");
++    field.textContent = q.label;
++
++    const control = document.createElement(q.type === "input" ? "input" : "textarea");
++    control.name = q.id;
++    control.value = values[q.id] || "";
++    field.appendChild(control);
++
++    stepForm.appendChild(field);
++  });
++}
++
++function collectInputs() {
++  const step = steps[currentStepIndex];
++  const values = getStepValues(step.id);
++  const controls = stepForm.querySelectorAll("input, textarea");
++
++  controls.forEach((ctrl) => {
++    values[ctrl.name] = ctrl.value;
++  });
++
++  saveState();
++}
++
++function renderPreview() {
++  const completion = steps.filter((step) => isStepComplete(step)).length;
++  const payload = {
++    completion: `${completion}/${steps.length} sections complete`,
++    updatedAt: new Date().toISOString(),
++    sections: state,
++  };
++  summaryPreview.textContent = JSON.stringify(payload, null, 2);
++}
++
++function render() {
++  const step = steps[currentStepIndex];
++  stepTag.textContent = step.tag;
++  stepTitle.textContent = step.title;
++  stepDescription.textContent = step.description;
++  renderForm(step);
++  renderStepList();
++  renderPreview();
++
++  prevBtn.disabled = currentStepIndex === 0;
++  nextBtn.textContent =
++    currentStepIndex === steps.length - 1 ? "Save & Finish" : "Save & Next";
++}
++
++prevBtn.addEventListener("click", () => {
++  collectInputs();
++  if (currentStepIndex > 0) currentStepIndex -= 1;
++  render();
++});
++
++nextBtn.addEventListener("click", () => {
++  collectInputs();
++  if (currentStepIndex < steps.length - 1) currentStepIndex += 1;
++  render();
++});
++
++resetBtn.addEventListener("click", () => {
++  const step = steps[currentStepIndex];
++  state[step.id] = {};
++  saveState();
++  render();
++});
++
++copyBtn.addEventListener("click", async () => {
++  try {
++    await navigator.clipboard.writeText(summaryPreview.textContent);
++    copyBtn.textContent = "Copied!";
++    setTimeout(() => (copyBtn.textContent = "Copy Brief JSON"), 1400);
++  } catch {
++    copyBtn.textContent = "Clipboard blocked";
++    setTimeout(() => (copyBtn.textContent = "Copy Brief JSON"), 1800);
++  }
++});
++
++render();
+diff --git a/index.html b/index.html
+index 6a628aaa17c3c6cd022f5bcbc3c6c11df5ec8b72..bf82afdda5dfa4afeec4c5ef09908c0f0ae44746 100644
+--- a/index.html
++++ b/index.html
+@@ -1,151 +1,62 @@
+ <!doctype html>
+ <html lang="en">
+   <head>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+-    <title>Shivam Jha</title>
+-
++    <title>UXR Portfolio Masterplan Builder</title>
+     <link
+       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+       rel="stylesheet"
+     />
+-
+-    <style>
+-      :root {
+-        --bg: #0b0b10;
+-        --text: #f2f2f5;
+-        --muted: #9a9aa6;
+-        --accent: #7cffcb;
+-      }
+-
+-      * {
+-        margin: 0;
+-        padding: 0;
+-        box-sizing: border-box;
+-        font-family: Inter, system-ui, sans-serif;
+-      }
+-
+-      html,
+-      body {
+-        height: 100%;
+-        background: var(--bg);
+-        color: var(--text);
+-      }
+-
+-      body {
+-        display: flex;
+-        align-items: center;
+-        justify-content: center;
+-        text-align: center;
+-        padding: 40px;
+-      }
+-
+-      /* subtle grain */
+-      body::after {
+-        content: "";
+-        position: fixed;
+-        inset: 0;
+-        background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+-        opacity: 0.04;
+-        pointer-events: none;
+-      }
+-
+-      /* container */
+-      .container {
+-        max-width: 900px;
+-      }
+-
+-      /* name */
+-      h1 {
+-        font-size: clamp(2.8rem, 6vw, 4.5rem);
+-        font-weight: 700;
+-        letter-spacing: -0.02em;
+-      }
+-
+-      /* divider */
+-      .divider {
+-        width: 80px;
+-        height: 2px;
+-        background: var(--accent);
+-        margin: 28px auto;
+-        opacity: 0.8;
+-      }
+-
+-      /* main thought */
+-      .main-text {
+-        font-size: 1.2rem;
+-        line-height: 1.9;
+-        color: var(--muted);
+-      }
+-
+-      /* strong lines */
+-      .main-text strong {
+-        color: var(--text);
+-        font-weight: 600;
+-      }
+-
+-      /* philosophy-tech block */
+-      .blocks {
+-        margin-top: 48px;
+-        font-size: 1.05rem;
+-        line-height: 1.8;
+-        color: var(--muted);
+-      }
+-
+-      /* coming soon */
+-      .coming {
+-        margin-top: 56px;
+-        font-size: 0.85rem;
+-        letter-spacing: 4px;
+-        color: var(--accent);
+-        opacity: 0.7;
+-        animation: fade 2.5s ease-in-out infinite;
+-      }
+-
+-      @keyframes fade {
+-        0%,
+-        100% {
+-          opacity: 0.4;
+-        }
+-        50% {
+-          opacity: 0.9;
+-        }
+-      }
+-    </style>
++    <link rel="stylesheet" href="styles.css" />
+   </head>
+ 
+   <body>
+-    <div class="container">
+-      <h1>Shivam Jha</h1>
+-
+-      <div class="divider"></div>
+-
+-      <p class="main-text">
+-        I write at the intersection of <strong>technology</strong> and
+-        <strong>philosophy</strong>. <br /><br />
+-        Not to predict the future — but to question the systems we are already
+-        living inside.
+-      </p>
+-
+-      <div class="blocks">
+-        <p>
+-          Code is not neutral.<br />
+-          Interfaces are arguments.<br />
+-          Security is a statement about trust.<br />
+-          UX is applied ethics at scale.
++    <div class="app">
++      <header class="header">
++        <p class="kicker">Interactive Planning Flow</p>
++        <h1>UXR Portfolio Masterplan — Content Intake Wizard</h1>
++        <p class="subtitle">
++          I converted your plan into an interactive sequence so you can fill in each section
++          step-by-step. Your inputs auto-save locally in this browser.
+         </p>
+-
+-        <br />
+-
+-        <p>
+-          From programming and cybersecurity<br />
+-          to design, behavior, and first-principle thinking — this space
+-          explores how tools quietly shape humans, long before humans realize
+-          it.
+-        </p>
+-      </div>
+-
+-      <div class="coming">COMING SOON</div>
++      </header>
++
++      <main class="layout">
++        <aside class="panel steps">
++          <h2>Content Sections</h2>
++          <ul id="stepList" class="step-list"></ul>
++        </aside>
++
++        <section class="panel editor">
++          <span id="stepTag" class="chip"></span>
++          <div class="prompt">
++            <h3 id="stepTitle"></h3>
++            <p id="stepDescription"></p>
++          </div>
++          <form id="stepForm" class="question-grid"></form>
++
++          <div class="actions">
++            <button id="prevBtn" type="button" class="ghost">Back</button>
++            <div>
++              <button id="resetBtn" type="button" class="ghost">Reset section</button>
++              <button id="nextBtn" type="button" class="primary">Save & Next</button>
++            </div>
++          </div>
++
++          <div class="output">
++            <strong>Live Portfolio Brief</strong>
++            <pre id="summaryPreview"></pre>
++            <button id="copyBtn" type="button" class="ghost">Copy Brief JSON</button>
++            <p class="helper">
++              Tip: once complete, send this JSON to your developer (or me) to generate the full
++              Next.js/Framer Motion build.
++            </p>
++          </div>
++        </section>
++      </main>
+     </div>
++
++    <script src="app.js" defer></script>
+   </body>
+ </html>
+diff --git a/styles.css b/styles.css
+new file mode 100644
+index 0000000000000000000000000000000000000000..2f7f7a5789138b03bd7ff4c36f6bc8324973e3b2
+--- /dev/null
++++ b/styles.css
+@@ -0,0 +1,228 @@
++:root {
++  --bg: #090b12;
++  --surface: #121624;
++  --surface-2: #171d2f;
++  --text: #f4f7ff;
++  --muted: #9ea7bf;
++  --accent: #3aa1ff;
++  --accent-soft: rgba(58, 161, 255, 0.2);
++  --ok: #52d39b;
++}
++
++* {
++  margin: 0;
++  padding: 0;
++  box-sizing: border-box;
++  font-family: Inter, system-ui, sans-serif;
++}
++
++html,
++body {
++  background: radial-gradient(circle at top right, #1d2742 0%, var(--bg) 45%);
++  color: var(--text);
++  min-height: 100%;
++}
++
++body {
++  padding: 32px 18px 56px;
++}
++
++.app {
++  max-width: 1040px;
++  margin: 0 auto;
++}
++
++.header {
++  margin-bottom: 24px;
++}
++
++.kicker {
++  color: var(--accent);
++  text-transform: uppercase;
++  letter-spacing: 2px;
++  font-size: 0.78rem;
++  margin-bottom: 10px;
++}
++
++h1 {
++  font-size: clamp(1.8rem, 3.8vw, 2.9rem);
++  line-height: 1.2;
++  margin-bottom: 10px;
++}
++
++.subtitle {
++  color: var(--muted);
++  max-width: 760px;
++  line-height: 1.7;
++}
++
++.layout {
++  display: grid;
++  grid-template-columns: 290px 1fr;
++  gap: 18px;
++}
++
++.panel {
++  background: linear-gradient(180deg, var(--surface), var(--surface-2));
++  border: 1px solid rgba(255, 255, 255, 0.08);
++  border-radius: 16px;
++}
++
++.steps {
++  padding: 18px;
++  position: sticky;
++  top: 16px;
++  height: fit-content;
++}
++
++.steps h2 {
++  font-size: 1rem;
++  margin-bottom: 12px;
++}
++
++.step-list {
++  list-style: none;
++  display: grid;
++  gap: 10px;
++}
++
++.step-button {
++  width: 100%;
++  text-align: left;
++  border-radius: 12px;
++  border: 1px solid rgba(255, 255, 255, 0.08);
++  background: rgba(255, 255, 255, 0.02);
++  color: var(--text);
++  padding: 10px 12px;
++  cursor: pointer;
++}
++
++.step-button small {
++  color: var(--muted);
++  display: block;
++  margin-top: 4px;
++}
++
++.step-button.active {
++  border-color: var(--accent);
++  box-shadow: 0 0 0 3px var(--accent-soft);
++}
++
++.step-button.done::after {
++  content: "✓";
++  float: right;
++  color: var(--ok);
++  font-weight: 700;
++}
++
++.editor {
++  padding: 20px;
++}
++
++.chip {
++  display: inline-block;
++  color: var(--accent);
++  background: var(--accent-soft);
++  border-radius: 99px;
++  padding: 6px 10px;
++  font-size: 0.78rem;
++  margin-bottom: 12px;
++}
++
++.prompt {
++  margin-bottom: 14px;
++}
++
++.prompt h3 {
++  font-size: 1.24rem;
++  margin-bottom: 6px;
++}
++
++.prompt p {
++  color: var(--muted);
++  line-height: 1.6;
++}
++
++.question-grid {
++  display: grid;
++  gap: 14px;
++  margin-top: 16px;
++}
++
++label {
++  display: grid;
++  gap: 8px;
++  font-size: 0.93rem;
++}
++
++textarea,
++input {
++  width: 100%;
++  border-radius: 11px;
++  border: 1px solid rgba(255, 255, 255, 0.12);
++  background: rgba(6, 9, 18, 0.8);
++  color: var(--text);
++  padding: 11px 12px;
++  line-height: 1.5;
++}
++
++textarea {
++  min-height: 92px;
++  resize: vertical;
++}
++
++.actions {
++  display: flex;
++  justify-content: space-between;
++  gap: 10px;
++  margin-top: 18px;
++}
++
++button {
++  border: 0;
++  border-radius: 10px;
++  padding: 11px 14px;
++  cursor: pointer;
++  font-weight: 600;
++}
++
++.ghost {
++  background: rgba(255, 255, 255, 0.09);
++  color: var(--text);
++}
++
++.primary {
++  background: var(--accent);
++  color: #fff;
++}
++
++.output {
++  margin-top: 16px;
++  padding: 16px;
++  border-radius: 12px;
++  border: 1px solid rgba(255, 255, 255, 0.1);
++  background: rgba(2, 6, 16, 0.8);
++}
++
++.output pre {
++  white-space: pre-wrap;
++  color: #dce8ff;
++  font-size: 0.88rem;
++  line-height: 1.6;
++}
++
++.helper {
++  margin-top: 10px;
++  color: var(--muted);
++  font-size: 0.85rem;
++}
++
++@media (max-width: 920px) {
++  .layout {
++    grid-template-columns: 1fr;
++  }
++
++  .steps {
++    position: static;
++  }
++}
